@@ -15,7 +15,18 @@
 
 # HINTS
 # Get a random number between 1 and 6 by doing:
-# rand(1..6)
+rand_one = rand(1..6)
+rand_two = rand(1..6)
+rands_combined = rand_one + rand_two
+puts rands_combined
+if rands_combined == 7 || rands_combined == 11
+    puts "You Win"
+elsif rands_combined == 2 || rands_combined == 3 || rands_combined == 12
+    puts "You Lose"
+else
+    "The point is #{rands_combined}"
+end
+
 # Log output to the screen with puts, e.g.
 # puts "Hello"
 # You can add two strings together, or two numbers, but
